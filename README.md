@@ -142,11 +142,11 @@ http://127.0.0.1:5500/dashboard.html
 
 ## Workflow
 
-1. Open the dashboard interface.
-2. Enter a gesture name and start recording.
-3. Perform the gesture in front of the webcam.
-4. Retrain the Random Forest model.
-5. Use gestures to control desktop actions.
+1. Open the dashboard interface -> Click Start System
+2. Enter a gesture name and start recording
+3. Perform the gesture in front of the webcam
+4. Retrain the Random Forest model
+5. Use gestures to control desktop actions (Gesture Actions Enable)
 
 ---
 
