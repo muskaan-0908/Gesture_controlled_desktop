@@ -1,64 +1,107 @@
-Gesture Controlled Desktop System
+# Gesture Controlled Desktop System
 
-This project is a gesture-based desktop control system that allows users to perform common computer actions using hand gestures captured through a webcam. The aim of the project is to create a more natural and customizable way to interact with a computer by combining computer vision, machine learning, and a web-based interface.
+## Overview
 
-Features
+The Gesture Controlled Desktop System is a computer vision based application that allows users to control desktop functions using hand gestures captured through a webcam. The system combines real-time gesture recognition with a web-based dashboard that enables users to add, manage, and retrain custom gestures.
 
-Real-time hand gesture detection using a webcam
+The objective of this project is to provide a more intuitive and accessible method of human-computer interaction by integrating machine learning, desktop automation, and a user-friendly interface.
 
-Machine learning based gesture recognition
+---
 
-Custom gesture recording and saving
+## Key Features
 
-One-click model retraining
+- Real-time hand gesture detection using webcam input  
+- Customizable gesture recording and management  
+- Machine learning based gesture classification  
+- One-click model retraining from the dashboard  
+- Bootstrap-based web interface for user interaction  
+- Desktop automation including media control and navigation shortcuts  
 
-Bootstrap-based web dashboard
+---
 
-Desktop automation such as media control and tab switching
+## Technology Stack
 
-Tech Stack
+### Frontend
+- HTML
+- Bootstrap
+- JavaScript
 
-Frontend
+### Backend
+- Python
+- FastAPI
 
-HTML
+### Computer Vision and Machine Learning
+- OpenCV
+- MediaPipe
+- Scikit-learn (K-Nearest Neighbors Classifier)
 
-Bootstrap
+---
 
-JavaScript
+## Project Architecture
 
-Backend
+The system is divided into three main components:
 
-Python
+1. Gesture Detector  
+   Captures webcam input, extracts hand landmarks using MediaPipe, and predicts gestures using a trained machine learning model.
 
-FastAPI
+2. Backend API (FastAPI)  
+   Handles communication between the frontend dashboard and the detector, manages recording requests, and controls model retraining.
 
-Computer Vision and Machine Learning
+3. Web Dashboard  
+   Provides a user interface to add gestures, start recording, retrain the model, and monitor system status.
 
-OpenCV
+---
 
-MediaPipe
+## Project Structure
 
-Scikit-learn (KNN Classifier)
-
-Project Structure
 Gesture_controlled_desktop/
 │
-├── backend/        # FastAPI server and detector logic
-├── frontend/       # Dashboard UI
-├── run_detector.py # Real-time gesture detection
+├── backend/
+│ ├── main.py
+│ ├── run_detector.py
+│ ├── actions.py
+│ ├── retrain.py
+│ └── dataset/
+│
+├── frontend/
+│ ├── dashboard.html
+│ ├── script.js
+│ └── style.css
+│
 └── README.md
 
-How to Run the Project
-Start Backend
+
+---
+
+## Setup and Installation
+
+### Clone the Repository
+
+git clone https://github.com/muskaan-0908/Gesture_controlled_desktop.git
+cd Gesture_controlled_desktop
+
+
+### Install Dependencies
+
+pip install fastapi uvicorn opencv-python mediapipe numpy scikit-learn joblib
+
+
+---
+
+## Running the Project
+
+### Start the Backend Server
+
 cd backend
 python -m uvicorn main:app --reload
 
 
-Backend will run at:
+Backend will be available at:
 
 http://127.0.0.1:8000
 
-Start Gesture Detector
+
+### Start the Gesture Detector
 
 Open a new terminal:
 
@@ -66,9 +109,9 @@ cd backend
 python run_detector.py
 
 
-This will open the webcam window.
+This will launch the webcam window.
 
-Start Frontend
+### Start the Frontend Dashboard
 
 Open another terminal:
 
@@ -76,27 +119,33 @@ cd frontend
 python -m http.server 5500
 
 
-Open the dashboard in browser:
+Open the dashboard in your browser:
 
 http://127.0.0.1:5500/dashboard.html
 
-How It Works
 
-The webcam captures hand landmarks using MediaPipe.
-A machine learning model identifies gestures from landmark data.
-Recognized gestures trigger desktop actions such as pausing media or switching tabs.
-Users can add new gestures through the dashboard and retrain the model when needed.
+---
 
-Learning Outcomes
+## Workflow
 
-Real-time computer vision integration
+1. Open the dashboard interface.
+2. Add a new gesture name and start recording.
+3. Perform the gesture in front of the webcam.
+4. Retrain the model using the dashboard.
+5. Use gestures to control desktop actions in real time.
 
-Machine learning model training and prediction
+---
 
-API communication between frontend and backend
+## Learning Outcomes
 
-Full-stack system development
+- Understanding of real-time computer vision pipelines
+- Integration of machine learning models into interactive systems
+- Backend API development using FastAPI
+- Frontend and backend communication using REST APIs
+- Designing user-focused interfaces for AI applications
 
-Author
+---
+
+## Author
 
 Muskaan
