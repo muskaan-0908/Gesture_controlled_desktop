@@ -1,0 +1,98 @@
+2026-02-19 21:18:22,347 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:18:22,812 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:19:58,441 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:19:58,915 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:20:58,842 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:20:59,489 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:22:38,204 - INFO - Received command: START_CAMERA
+2026-02-19 21:22:38,204 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:22:38,725 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:22:46,590 - INFO - Received command: STOP_CAMERA
+2026-02-19 21:22:49,271 - INFO - Received command: START_CAMERA
+2026-02-19 21:22:49,271 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:22:49,608 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:30:16,254 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:30:16,858 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:40:32,442 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:40:33,203 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:41:25,092 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:41:26,153 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:45:22,691 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:45:23,731 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:45:24,766 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:45:27,562 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:45:28,602 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:45:29,668 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:48:13,346 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:48:14,038 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:51:43,177 - INFO - Received command: START_CAMERA
+2026-02-19 21:51:43,177 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:51:43,740 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:52:12,288 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:52:13,377 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:52:16,062 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:52:19,454 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:56:51,512 - INFO - Received command: START_CAMERA
+2026-02-19 21:56:51,513 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:56:52,006 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:56:58,821 - INFO - Received command: START_CAMERA
+2026-02-19 21:59:25,018 - INFO - Received command: STOP_CAMERA
+2026-02-19 21:59:27,672 - INFO - Received command: START_CAMERA
+2026-02-19 21:59:27,672 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 21:59:28,085 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 21:59:39,808 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:40,921 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:44,767 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:45,828 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:46,915 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:47,960 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:49,845 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:50,882 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:53,422 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:54,475 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:55,506 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:56,542 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:57,579 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:58,624 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 21:59:59,656 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:00:00,695 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:00:04,413 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:02:01,772 - INFO - Received command: START_CAMERA
+2026-02-19 22:02:01,772 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 22:02:02,298 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 22:02:13,224 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:02:16,112 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:02:17,172 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:02:19,712 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:04:45,905 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:04:46,961 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:04:47,994 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:04:49,021 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:04:50,083 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:05:14,380 - INFO - Received command: START_CAMERA
+2026-02-19 22:05:15,446 - INFO - Received command: START_CAMERA
+2026-02-19 22:05:18,481 - INFO - Received command: START_CAMERA
+2026-02-19 22:06:21,390 - INFO - Received command: START_CAMERA
+2026-02-19 22:06:21,390 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 22:06:21,928 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 22:06:56,570 - INFO - Received command: START_CAMERA
+2026-02-19 22:06:57,596 - INFO - Received command: START_CAMERA
+2026-02-19 22:06:59,724 - INFO - Received command: START_CAMERA
+2026-02-19 22:07:02,302 - INFO - Received command: START_CAMERA
+2026-02-19 22:10:07,932 - INFO - Received command: START_CAMERA
+2026-02-19 22:10:07,932 - INFO - Attempting to open Camera 0 (DSHOW)...
+2026-02-19 22:10:08,516 - INFO - Camera 0 (DSHOW) opened successfully.
+2026-02-19 22:10:14,402 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:15,432 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:16,475 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:17,517 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:19,080 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:21,769 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:22,799 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:24,903 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:25,938 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:26,969 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:28,004 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:29,033 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:30,898 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-02-19 22:10:33,449 - WARNING - exception parsing edid str for DISPLAY\LGD07A4\4&27dff163&0&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name

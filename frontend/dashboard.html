@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestureHub AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <nav class="sidebar">
+            <div class="brand">
+                <i class="fas fa-hand-sparkles"></i> GestureHub
+            </div>
+            <div class="menu">
+                <a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="#" onclick="fetchGestures()"><i class="fas fa-fingerprint"></i> Gestures</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addGestureModal"><i class="fas fa-plus-circle"></i>
+                    Add New</a>
+                <a href="#" onclick="retrainModel()"><i class="fas fa-sync-alt"></i> Retrain Model</a>
+            </div>
+            <div class="status-indicator mb-3" id="systemStatus">
+                <span class="dot offline"></span> System Offline
+            </div>
+
+            <div class="manual-controls">
+                <button id="powerBtn" class="btn btn-power w-100 mb-3" onclick="toggleSystem()">
+                    <i class="fas fa-power-off"></i> Start System
+                </button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header class="top-bar">
+                <h1>Dashboard</h1>
+                <div class="user-profile">
+                    <span>Admin</span>
+                    <div class="avatar"><i class="fas fa-user"></i></div>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card neon-purple">
+                    <div class="icon"><i class="fas fa-list"></i></div>
+                    <div class="info">
+                        <h3>Total Gestures</h3>
+                        <h2 id="totalGestures">0</h2>
+                    </div>
+                </div>
+                <div class="stat-card neon-cyan" id="controlCard" onclick="toggleControlMode(event)">
+                    <div class="icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="info">
+                        <h3>Gesture Actions</h3>
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 id="controlStatusText">Disabled</h2>
+                            <div class="form-check form-switch custom-switch-lg">
+                                <input class="form-check-input" type="checkbox" id="controlToggle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card neon-pink">
+                    <div class="icon"><i class="fas fa-video"></i></div>
+                    <div class="info">
+                        <h3>Recording</h3>
+                        <h2 id="recordingStatus">Idle</h2>
+                    </div>
+                </div>
+                <div class="stat-card neon-green">
+                    <div class="icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="info">
+                        <h3>Model Status</h3>
+                        <h2 id="modelStatus" style="font-size: 1.2rem;">--</h2>
+                        <div id="accuracyContainer" style="display:none;">
+                            <small class="text-muted" style="font-size: 0.8rem;">Confidence</small>
+                            <div class="progress mt-1" style="height: 4px; background: rgba(255,255,255,0.1);">
+                                <div id="accuracyBar" class="progress-bar bg-success" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2">
+                <div class="col-lg-8">
+                    <div class="glass-panel h-100">
+                        <div class="panel-header">
+                            <h3><i class="fas fa-fingerprint"></i> Active Gestures</h3>
+                            <button class="btn btn-sm btn-outline-cyan" onclick="fetchGestures()"><i
+                                    class="fas fa-sync"></i> Refresh</button>
+                        </div>
+                        <div class="panel-body">
+                            <div id="gestureList" class="gesture-grid">
+                                <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="glass-panel h-100">
+                        <div class="panel-header">
+                            <h3><i class="fas fa-history"></i> Recent Activity</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul id="activityLog" class="activity-list">
+                                <li class="empty-log">No recent activity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal fade" id="addGestureModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-plus-circle"></i> Add New Gesture</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Gesture Name</label>
+                        <input type="text" id="gname" class="form-control neon-input" placeholder="e.g., Fist">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Action Mapping</label>
+                        <select id="gaction" class="form-select neon-input">
+                            <option value="volume_up">Volume Up</option>
+                            <option value="volume_down">Volume Down</option>
+                            <option value="pause">Play/Pause</option>
+                            <option value="next_tab">Next Tab</option>
+                            <option value="prev_tab">Previous Tab</option>
+                            <option value="scroll_up">Scroll Up</option>
+                            <option value="scroll_down">Scroll Down</option>
+                            <option value="brightness_up">Brightness Up</option>
+                            <option value="brightness_down">Brightness Down</option>
+                            <option value="next_app">Switch App (Alt+Tab)</option>
+                        </select>
+                    </div>
+
+                    <div class="record-section text-center">
+                        <button class="btn btn-cyan-glow w-100 mb-2" onclick="startRecording()">
+                            <i class="fas fa-video"></i> Start Recording
+                        </button>
+                        <div id="recordProgress" class="text-muted small">Show hand to camera (100 frames)</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-subtle" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-purple-glow" onclick="saveGestureMappings()">Save
+                        Gesture</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js?v=5"></script>
+</body>
+
+</html>

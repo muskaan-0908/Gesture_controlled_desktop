@@ -1,0 +1,13 @@
+
+__pycache__/
+*.pyc
+*.pkl
+
+dataset/
+
+venv/
+.env
+
+
+.DS_Store
+Thumbs.db
