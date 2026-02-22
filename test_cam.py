@@ -1,7 +1,6 @@
 import cv2
 import time
 
-print("--- CAMERA DIAGNOSTICS ---")
 
 def test_camera(index, backend_name, backend_id):
     print(f"\nTesting Camera {index} with {backend_name}...")
@@ -28,9 +27,7 @@ def test_camera(index, backend_name, backend_id):
         print(f"ERROR: Exception while testing: {e}")
         return False
 
-# Test cases
+
 test_camera(0, "DSHOW", cv2.CAP_DSHOW)
 test_camera(0, "DEFAULT", None)
 test_camera(1, "DEFAULT", None)
-
-print("\n--- END DIAGNOSTICS ---")
