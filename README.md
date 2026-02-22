@@ -63,6 +63,7 @@ Allows users to:
 
 ## Project Structure
 
+
 Gesture_controlled_desktop/
 │
 ├── backend/
@@ -72,7 +73,7 @@ Gesture_controlled_desktop/
 │ ├── retrain.py
 │ ├── actions.py
 │ └── recording.json
-│
+|
 ├── frontend/
 │ ├── dashboard.html
 │ ├── script.js
